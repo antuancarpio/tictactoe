@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="./js/functions.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main class="juego">
+        <h1>Tic-Tac-Toe</h1>
+        <p id="estado" class="estado">Turno: ✖</p>
+
+        <div class="tablero">
+            <div class="rejilla" id="rejilla">
+                <table>
+                    <tr>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                        <td><input type="button" onclick="activo(this)"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <p id="ganador" class="ganador"></p>
+        <button id="reiniciar" type="button" onclick="reiniciar()">Reiniciar</button>
+    </main>
+</body>
+</html>
